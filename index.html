@@ -3,185 +3,146 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Spreadsheet Doctor | BoreOut AI</title>
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:Segoe UI, Arial, sans-serif;
-    background:#f8fafc;
-    color:#1e293b;
+font-family:Segoe UI, Arial, sans-serif;
+background:#f8fafc;
+color:#1e293b;
+line-height:1.6;
 }
 
 .hero{
-    background:linear-gradient(135deg,#0f172a,#1e293b);
-    text-align:center;
-    padding:50px 20px 80px 20px;
+background:#0f172a;
+text-align:center;
+padding:40px 20px 80px;
 }
 
 .logo{
-    max-width:550px;
-    width:95%;
-    height:auto;
-    display:block;
-    margin:0 auto 50px auto;
-    border-radius:20px;
+max-width:260px;
+width:100%;
+height:auto;
+margin-bottom:30px;
 }
 
 .hero h1{
-    color:white;
-    font-size:3rem;
-    margin-bottom:15px;
+font-size:3rem;
+color:white;
+margin-bottom:20px;
 }
 
 .hero p{
-    max-width:750px;
-    margin:auto;
-    color:#cbd5e1;
-    line-height:1.8;
-    font-size:1.1rem;
-}
-
-.badge{
-    display:inline-block;
-    margin-top:25px;
-    background:#14b8a620;
-    color:#5eead4;
-    padding:10px 20px;
-    border-radius:999px;
-    font-weight:600;
+max-width:800px;
+margin:auto;
+font-size:1.15rem;
+color:#cbd5e1;
 }
 
 .cta-button{
-    display:inline-block;
-    margin-top:35px;
-    padding:18px 40px;
-    background:#14b8a6;
-    color:white;
-    text-decoration:none;
-    border-radius:12px;
-    font-size:18px;
-    font-weight:bold;
-    transition:0.3s;
+display:inline-block;
+margin-top:35px;
+padding:18px 40px;
+background:#14b8a6;
+color:white;
+text-decoration:none;
+font-weight:700;
+border-radius:10px;
+transition:.2s;
 }
 
 .cta-button:hover{
-    background:#0f9e8e;
+background:#0f9e8e;
 }
 
 .contact{
-    margin-top:20px;
-    color:#94a3b8;
+margin-top:20px;
+color:#94a3b8;
 }
 
 .section{
-    max-width:1200px;
-    margin:auto;
-    padding:80px 20px;
+max-width:1200px;
+padding:80px 20px;
+margin:auto;
 }
 
 .section-title{
-    text-align:center;
-    font-size:2.2rem;
-    margin-bottom:15px;
+text-align:center;
+font-size:2rem;
+margin-bottom:15px;
 }
 
 .section-subtitle{
-    text-align:center;
-    max-width:700px;
-    margin:auto auto 50px auto;
-    color:#64748b;
-    line-height:1.8;
+text-align:center;
+color:#64748b;
+max-width:700px;
+margin:0 auto 50px auto;
 }
 
 .features{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
 }
 
 .card{
-    background:white;
-    padding:30px;
-    border-radius:16px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
 .card h3{
-    margin-bottom:12px;
+margin-bottom:10px;
 }
 
 .card p{
-    color:#64748b;
-    line-height:1.7;
+color:#64748b;
 }
 
-.how{
-    background:white;
+.trust{
+background:#eef2f7;
+text-align:center;
+padding:70px 20px;
 }
 
-.steps{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-    max-width:1000px;
-    margin:auto;
+.trust h2{
+margin-bottom:20px;
 }
 
-.step{
-    text-align:center;
-}
-
-.number{
-    width:60px;
-    height:60px;
-    margin:auto auto 20px auto;
-    border-radius:50%;
-    background:#14b8a6;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:24px;
-    font-weight:bold;
-}
-
-.final{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:80px 20px;
-}
-
-.final p{
-    max-width:700px;
-    margin:auto;
-    color:#cbd5e1;
-    line-height:1.8;
+.trust p{
+max-width:800px;
+margin:auto;
+color:#475569;
 }
 
 .footer{
-    text-align:center;
-    padding:35px;
-    color:#64748b;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+.footer p{
+color:#94a3b8;
+margin-top:10px;
 }
 
 @media(max-width:768px){
 
 .hero h1{
-    font-size:2.2rem;
+font-size:2.2rem;
 }
 
 .logo{
-    width:100%;
-    margin-bottom:35px;
+max-width:180px;
 }
 
 }
@@ -193,27 +154,20 @@ body{
 
 <section class="hero">
 
-<img src="logo.png" alt="BoreOut AI" class="logo">
+<img src="logo.png" alt="BoreOut AI Logo" class="logo">
 
 <h1>Spreadsheet Doctor</h1>
 
 <p>
-Upload your Excel spreadsheet and receive a detailed audit showing
-broken formulas, duplicate records, missing values, hidden worksheets,
-and data quality issues before they become costly mistakes.
+Professional spreadsheet analysis designed to identify formula errors,
+duplicate records, missing values, hidden worksheets, and data quality risks
+before they impact reporting and business decisions.
 </p>
 
-<div class="badge">
-🚀 Free Spreadsheet Audits During Launch
-</div>
-
-<br>
-
-<a
-class="cta-button"
+<a class="cta-button"
 href="https://tally.so/r/7Xbja0"
 target="_blank">
-Get My Free Spreadsheet Audit
+Request Analysis
 </a>
 
 <div class="contact">
@@ -224,100 +178,91 @@ Get My Free Spreadsheet Audit
 
 <section class="section">
 
-<h2 class="section-title">What We Analyze</h2>
+<h2 class="section-title">
+Spreadsheet Health Analysis
+</h2>
 
 <p class="section-subtitle">
-A complete spreadsheet health check designed to uncover hidden issues.
+A detailed review of workbook structure, formulas, data quality and reporting integrity.
 </p>
 
 <div class="features">
 
 <div class="card">
-<h3>✅ Formula Errors</h3>
-<p>Broken formulas and invalid references.</p>
+<h3>Formula Validation</h3>
+<p>
+Identify broken formulas, invalid references and calculation risks.
+</p>
 </div>
 
 <div class="card">
-<h3>✅ Duplicate Records</h3>
-<p>Find duplicate rows affecting reporting accuracy.</p>
+<h3>Duplicate Detection</h3>
+<p>
+Find duplicate records that may affect reporting accuracy.
+</p>
 </div>
 
 <div class="card">
-<h3>✅ Missing Values</h3>
-<p>Detect blank cells and incomplete records.</p>
+<h3>Missing Data Analysis</h3>
+<p>
+Detect incomplete records and hidden data quality issues.
+</p>
 </div>
 
 <div class="card">
-<h3>✅ Hidden Worksheets</h3>
-<p>Reveal sheets hidden inside your workbook.</p>
+<h3>Worksheet Review</h3>
+<p>
+Reveal hidden worksheets and potentially overlooked information.
+</p>
 </div>
 
 <div class="card">
-<h3>✅ Data Quality Issues</h3>
-<p>Identify inconsistencies and potential risks.</p>
+<h3>Data Integrity Checks</h3>
+<p>
+Identify inconsistencies that can impact decisions and reporting.
+</p>
 </div>
 
 <div class="card">
-<h3>✅ Improvement Recommendations</h3>
-<p>Receive practical suggestions to improve reliability.</p>
+<h3>Recommendations</h3>
+<p>
+Receive clear suggestions to improve spreadsheet reliability.
+</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="section how">
+<section class="trust">
 
-<h2 class="section-title">How It Works</h2>
-
-<div class="steps">
-
-<div class="step">
-<div class="number">1</div>
-<h3>Upload</h3>
-<p>Submit your spreadsheet through our form.</p>
-</div>
-
-<div class="step">
-<div class="number">2</div>
-<h3>Analyze</h3>
-<p>We review formulas, structure and data quality.</p>
-</div>
-
-<div class="step">
-<div class="number">3</div>
-<h3>Receive Report</h3>
-<p>Get a Spreadsheet Health Report with findings.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="final">
-
-<h2 style="margin-bottom:20px;">Start Your Free Audit</h2>
+<h2>Built for Professionals</h2>
 
 <p>
-We're currently offering free spreadsheet audits to early users while we
-build the next generation of BoreOut AI tools.
+Spreadsheet Doctor helps businesses and professionals review complex spreadsheets,
+identify hidden issues, and improve confidence in their data. Files submitted for
+analysis are handled confidentially and are used solely for the requested review.
 </p>
 
 <br><br>
 
-<a
-class="cta-button"
+<a class="cta-button"
 href="https://tally.so/r/7Xbja0"
 target="_blank">
-Upload My Spreadsheet
+Submit Spreadsheet
 </a>
 
 </section>
 
-<div class="footer">
-<b>BoreOut AI</b><br>
-Eliminating the Busywork
-</div>
+<footer class="footer">
+
+<h3>BoreOut AI</h3>
+
+<p>
+Professional automation and analysis tools for modern business operations.
+</p>
+
+</footer>
 
 </body>
 </html>
